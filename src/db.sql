@@ -1,0 +1,1 @@
+SELECT a.invoice_date,b.saldo_c,b.no_pedido_c,h.name,e.name FROM aos_invoices a INNER JOIN aos_invoices_cstm b ON b.id_c = a.id INNER JOIN b13_sucursales h ON h.id = b.id_c INNER JOIN accounts e ON e.id = a.billing_account_id

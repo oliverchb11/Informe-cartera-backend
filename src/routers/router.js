@@ -1,0 +1,10 @@
+const express = require('express');
+const router = express.Router();
+const controller = require('../controllers/controllers');
+router.get('/nombre-sucursal', controller.getNombreSucursal);
+router.get('/fecha-factura', controller.getFechaFactura);
+router.get('/nombre-cliente', controller.getNombreCliente);
+router.get('/saldo', controller.getSaldo);
+router.get('/numero-pedido', controller.getNumeroPedido);
+router.get('/facturas-no-pagadas', controller.getFacturasNoPagadas);
+module.exports = router;
